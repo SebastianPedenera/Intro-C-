@@ -1,10 +1,13 @@
-/*
-	primeros pasos en el lenguaje C++
-*/ 
-
-#include<iostream> 	// Libreria basica
-#include <stdio.h> 	// libreria basica
-#include <string>	// Libreria string
+//	primeros pasos en el lenguaje C++
+ 
+#include <cstdlib> 
+#include <string>  // para uso string
+#include <stdlib.h> // para el numero random
+#include <time.h> // para la semilla del random
+#include <iostream> // cout y cin
+#include <stdio.h> // para uso printf y Scanf
+#include <list>
+#include <vector>
 
 using namespace std; //usar las opciones de entrada y salida (cout y cin) 
 
@@ -28,6 +31,7 @@ int main(){
 	double mayor = 125.545;
 	char letra = 'a';
 	bool calor = false;
+	// Definir una constante
 	const int cero = 0;
 	
 	// cout.precison(2); //redondea a dos numeros despues de la coma
@@ -53,7 +57,6 @@ int main(){
 	cout<<"\n La suma es: "<<suma<<"\n la resta es:"<<resta<<endl;
 	cout<<" La multiplicacion es: "<<mult<<"\n la division es:"<<div<<endl;
 	cout<< "------------------\n";
-	// 
-	
+		
 	return 0;
 }
