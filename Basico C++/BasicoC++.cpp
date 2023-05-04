@@ -57,6 +57,72 @@ int main(){
 	cout<<"\n La suma es: "<<suma<<"\n la resta es:"<<resta<<endl;
 	cout<<" La multiplicacion es: "<<mult<<"\n la division es:"<<div<<endl;
 	cout<< "------------------\n";
+	
+	// Estructuras de control:
+	
+	// Condicional If
+	int num11;
+	int num12;
+	printf("Ingrese un número: \n");
+	cin>> num11;
+	printf("ingrese otro número: \n");
+	cin>> num12;
+	if(num11==num12)
+	printf ("números iguales\n");
+	else if(num11>num12)
+	printf ("El primer número es mayor al segundo número\n");
+	else
+	printf ("El primer número es menor al segundo número\n");
+	cout<< "------------------\n";
+	
+	// Condicional Switch
+	int opcion;
+	printf("Ingrese la opcion 1, 2, 3: \n");
+	cin>>opcion;
+	switch(opcion){
+		case 1:
+			printf("UNO! \n");
+			break;
+		case 2:
+			printf("DOS! \n");
+			break;
+		case 3:
+			printf("TRES! \n");
+			break;
+		default:
+			printf("Opción incorrecta \n");
+			break;	
+	}
+	cout<< "------------------\n";
+	
+	// Bucle For
+	cout<< "ingrese un numero\n";
+	int cont; cin>>cont;
+	for (int i=0;i<=cont; i++){
+		cout<< i << "\n";
+	}
+	cout<< "------------------\n";
+	
+	//Bucle while
+	int num20, tope, i;
+	cout << "ingrese el tope: "; cin >> tope;
+	i=1;
+	while(i<=tope){
+		cout<<i<<"\n";
+		i++;
+	}	
+	cout<< "------------------\n";
+	
+	//Bucle do/while
+	int numSecreto, numUsuario;
+	numSecreto=3;
+	do{
+		cout<< "Adivine el número \n";
+		cin>>numUsuario;
+	}while(numUsuario!=numSecreto);
+	cout<<"Adivinaste!!\n";
+	cout<< "------------------\n";
+	
 		
 	return 0;
 }
